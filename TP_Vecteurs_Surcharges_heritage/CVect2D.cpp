@@ -88,6 +88,31 @@ CVect2D CVect2D::operator*(CVect2D& c_v)
 	return c_vResultat;
 }
 
+CVect2D CVect2D::operator/(CVect2D& c_v)
+{
+	CVect2D c_vResultat;
+
+	if ((c_v.m_flt_x != 0) && (c_v.m_flt_y != 0)) {
+		c_vResultat.m_flt_x = this->m_flt_x / c_v.m_flt_x;
+		c_vResultat.m_flt_y = this->m_flt_y / c_v.m_flt_y;
+	}
+
+
+	return c_vResultat;
+}
+
+bool CVect2D::operator!=(CVect2D& c_v)
+{
+	if ((this->m_flt_x == c_v.m_flt_x) && (this->m_flt_x == c_v.m_flt_y)) {
+
+
+		return false;
+	}
+	else {
+		return true;
+	}
+}
+
 
 //autres methodes :
 

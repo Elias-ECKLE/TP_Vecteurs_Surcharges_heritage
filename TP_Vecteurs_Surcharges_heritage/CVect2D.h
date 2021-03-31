@@ -62,6 +62,17 @@ public :
 			//SORTIE :nouvelle instance CVect2D
 			CVect2D operator*(CVect2D&);
 
+				
+			//BUT :faire la division des deux vecteurs
+			//ENTREE:ref instance CVect3D
+			//SORTIE :nouvelle instance CVect3D
+			CVect2D operator/(CVect2D&);
+
+			//BUT :voir si c'est différent ou pas
+			//ENTREE:ref instance CVect3D
+			//SORTIE :boolean
+			bool operator!=(CVect2D&);
+
 
 		//autres :
 			//BUT :comparer les coordonnées des vecteurs et voir s'ils sont les mêmes
