@@ -43,21 +43,24 @@ public :
 	//methodes :
 
 		//operateurs usuelles
+			
+			CVect2D operator=(const CVect2D&);
 		
 			//BUT :faire la somme des deux vecteurs
 			//ENTREE:ref instance CVect2D
 			//SORTIE :nouvelle instance CVect2D
-			CVect2D addition(CVect2D&)const;
+			//CVect2D addition(CVect2D&)const;
+			CVect2D operator+(CVect2D&);
 
 			//BUT :faire la soustraction des deux vecteurs
 			//ENTREE:ref instance CVect2D
 			//SORTIE :nouvelle instance CVect2D
-			CVect2D soustraction(CVect2D&)const;
+			CVect2D operator-(CVect2D&);
 
 			//BUT :faire la multiplication des deux vecteurs
 			//ENTREE:ref instance CVect2D
 			//SORTIE :nouvelle instance CVect2D
-			CVect2D multiplication(CVect2D&)const;
+			CVect2D operator*(CVect2D&);
 
 
 		//autres :
